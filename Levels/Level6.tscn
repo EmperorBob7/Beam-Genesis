@@ -1,0 +1,167 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Lights/Ramp.tres" type="TileSet" id=1]
+[ext_resource path="res://Finish.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Lights/Flashlight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Flag2.png" type="Texture" id=5]
+[ext_resource path="res://Tilemap.tres" type="TileSet" id=6]
+[ext_resource path="res://Lights/Battery.tscn" type="PackedScene" id=7]
+
+[node name="Level6" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 6 )
+format = 1
+tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, -1610612736, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, 65535, 0, 0, 0, -2147483648, 0, 1, -2147483648, 0, 2, -2147483648, 0, 3, -2147483648, 0, 4, -2147483648, 0, 5, -2147483648, 0, 6, -2147483648, 0, 7, -2147483648, 0, 8, -2147483648, 0, 9, -2147483648, 0, 10, -2147483648, 0, 11, -2147483648, 0, 12, -2147483648, 0, 13, -2147483648, 0, 14, -2147483648, 0, 15, -2147483648, 0, 16, -2147483648, 0, 17, -2147483648, 0, 18, -2147483648, 0, 19, -2147483648, 0, 20, -2147483648, 0, 21, -2147483648, 0, 22, -2147483648, 0, 23, -2147483648, 0, 24, -2147483648, 0, 25, -2147483648, 0, 26, -2147483648, 0, 27, -2147483648, 0, 28, -2147483648, 0, 29, -2147483648, 0, 30, 0, 0, 131071, 0, 0, 65536, -2147483648, 0, 65537, -2147483648, 0, 65538, -2147483648, 0, 65539, -2147483648, 0, 65540, -2147483648, 0, 65541, -2147483648, 0, 65542, -2147483648, 0, 65543, -2147483648, 0, 65544, -2147483648, 0, 65545, -2147483648, 0, 65546, -2147483648, 0, 65547, -2147483648, 0, 65548, -2147483648, 0, 65549, -2147483648, 0, 65550, -2147483648, 0, 65551, -2147483648, 0, 65552, -2147483648, 0, 65553, -2147483648, 0, 65554, -2147483648, 0, 65555, -2147483648, 0, 65556, -2147483648, 0, 65557, -2147483648, 0, 65558, -2147483648, 0, 65559, -2147483648, 0, 65560, -2147483648, 0, 65561, -2147483648, 0, 65562, -2147483648, 0, 65563, -2147483648, 0, 65564, -2147483648, 0, 65565, -2147483648, 0, 65566, -1610612736, 0, 196607, 0, 0, 131102, 0, 0, 262143, 0, 0, 196638, 0, 0, 327679, 0, 0, 262174, 0, 0, 393215, 0, 0, 327710, 0, 0, 458751, 0, 0, 393246, 0, 0, 524287, 0, 0, 458782, 0, 0, 589823, 0, 0, 524318, 0, 0, 655359, 0, 0, 589854, 0, 0, 720895, 0, 0, 655390, 0, 0, 786431, 0, 0, 720926, 0, 0, 851967, 0, 0, 786462, 0, 0, 917503, 0, 0, 851998, 0, 0, 983039, -1610612736, 0, 917532, 1073741824, 0, 917534, 0, 0, 1048575, -1610612736, 0, 983067, 1073741824, 0, 983068, 1073741824, 0, 983069, 1073741824, 0, 983070, -1610612736, 0, 1114111, -1610612736, 0, 1048576, -1610612736, 0, 1048577, -1610612736, 0, 1048578, -1610612736, 0, 1048579, -1610612736, 0, 1048580, 0, 0, 1048581, 1610612736, 0, 1048582, -1610612736, 0, 1048583, 1610612736, 0, 1048584, 1610612736, 0, 1048585, 1610612736, 0, 1048586, 1610612736, 0, 1048587, 1610612736, 0, 1048588, 1610612736, 0, 1048589, 1610612736, 0, 1048590, 1610612736, 0, 1048591, 1610612736, 0, 1048592, 1610612736, 0, 1048593, 1610612736, 0, 1048594, 1610612736, 0, 1048595, 1610612736, 0, 1048596, 1610612736, 0, 1048597, 1610612736, 0, 1048598, 1610612736, 0, 1048599, -1610612736, 0, 1048600, -1610612736, 0, 1048601, -1610612736, 0, 1048602, -1610612736, 0, 1048603, -1610612736, 0, 1048604, -1610612736, 0, 1048605, -1610612736, 0, 1048606, -1610612736, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 148, 432 )
+scale = Vector2( 0.95, 0.95 )
+
+[node name="Finish" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1796, 736 )
+scale = Vector2( -1, 1 )
+
+[node name="Flag2" type="Sprite" parent="Finish"]
+position = Vector2( 0, 64 )
+texture = ExtResource( 5 )
+
+[node name="Flag3" type="Sprite" parent="Finish"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 5 )
+
+[node name="Beam1" type="TileMap" parent="."]
+visible = false
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0, 196615, -2147483643, 0, 262151, -2147483643, 0, 327687, -2147483643, 0, 393223, -2147483643, 0, 458759, -2147483643, 0, 524295, -2147483643, 0, 589831, -2147483643, 0, 655367, -2147483643, 0, 720903, -2147483643, 0, 786439, -2147483643, 0 )
+
+[node name="Flashlight1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 480, 864 )
+rotation = -1.5708
+
+[node name="Battery1" parent="." instance=ExtResource( 7 )]
+position = Vector2( 480, 992 )
+
+[node name="Beam2" type="TileMap" parent="."]
+visible = false
+position = Vector2( 64, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0 )
+
+[node name="Flashlight2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 544, 864 )
+rotation = -1.5708
+
+[node name="Battery2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 544, 992 )
+
+[node name="Beam3" type="TileMap" parent="."]
+visible = false
+position = Vector2( 128, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0, 262151, -2147483643, 0, 327687, -2147483643, 0 )
+
+[node name="Flashlight3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 608, 864 )
+rotation = -1.5708
+
+[node name="Battery3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 608, 992 )
+
+[node name="Beam4" type="TileMap" parent="."]
+visible = false
+position = Vector2( 192, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0, 262151, -2147483643, 0, 327687, -2147483643, 0, 720903, -2147483643, 0, 786439, -2147483643, 0 )
+
+[node name="Flashlight4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 672, 864 )
+rotation = -1.5708
+
+[node name="Battery4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 672, 992 )
+
+[node name="Beam5" type="TileMap" parent="."]
+visible = false
+position = Vector2( 256, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0, 262151, -2147483643, 0, 327687, -2147483643, 0, 720903, -2147483643, 0, 786439, -2147483643, 0 )
+
+[node name="Flashlight5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 736, 864 )
+rotation = -1.5708
+
+[node name="Battery5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 736, 992 )
+
+[node name="Beam6" type="TileMap" parent="."]
+visible = false
+position = Vector2( 320, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0, 262151, -2147483643, 0, 327687, -2147483643, 0 )
+
+[node name="Flashlight6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 800, 864 )
+rotation = -1.5708
+
+[node name="Battery6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 800, 992 )
+
+[node name="Beam7" type="TileMap" parent="."]
+visible = false
+position = Vector2( 384, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0 )
+
+[node name="Flashlight7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 864, 864 )
+rotation = -1.5708
+
+[node name="Battery7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 864, 992 )
+
+[node name="Beam8" type="TileMap" parent="."]
+visible = false
+position = Vector2( 448, 0 )
+tile_set = ExtResource( 1 )
+show_collision = true
+collision_layer = 0
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 131079, -2147483643, 0, 196615, -2147483643, 0, 262151, -2147483643, 0, 327687, -2147483643, 0, 393223, -2147483643, 0, 458759, -2147483643, 0, 524295, -2147483643, 0, 589831, -2147483643, 0, 655367, -2147483643, 0, 720903, -2147483643, 0, 786439, -2147483643, 0 )
+
+[node name="Flashlight8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 928, 864 )
+rotation = -1.5708
+
+[node name="Battery8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 928, 992 )

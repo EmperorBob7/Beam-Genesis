@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Piston.mp3-c3fd35fe9578642a1737c90ab6a0dcd5.mp3str"
+
+[deps]
+
+source_file="res://Audio/Piston.mp3"
+dest_files=[ "res://.import/Piston.mp3-c3fd35fe9578642a1737c90ab6a0dcd5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

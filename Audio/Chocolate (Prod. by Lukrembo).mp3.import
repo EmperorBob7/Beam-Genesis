@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Chocolate (Prod. by Lukrembo).mp3-0fe073d763a0cdcdf5ff5c6880c3e53b.mp3str"
+
+[deps]
+
+source_file="res://Audio/Chocolate (Prod. by Lukrembo).mp3"
+dest_files=[ "res://.import/Chocolate (Prod. by Lukrembo).mp3-0fe073d763a0cdcdf5ff5c6880c3e53b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
